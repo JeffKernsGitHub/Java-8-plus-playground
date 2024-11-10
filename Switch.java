@@ -34,7 +34,7 @@ public class Switch {
         var stringvar = "some string";
         objectvar = stringvar;
 
-        println("formatterPatternSwitch(objectvar)="+formatterPatternSwitch(objectvar));
+        println("formatterPatternSwitch(objectvar)=" + formatterPatternSwitch(objectvar));
 
     }
 
@@ -51,13 +51,14 @@ public class Switch {
         System.out.printf("%s was a %s%n", person, title);
     }
 
+    // Pattern Matching for Switch
     static String formatterPatternSwitch(Object obj) {
         return switch (obj) {
             case Integer i -> String.format("int %d", i);
-            case Long l    -> String.format("long %d", l);
-            case Double d  -> String.format("double %f", d);
-            case String s  -> String.format("String %s", s);
-            default        -> obj.toString();
+            case Long l -> String.format("long %d", l);
+            case Double d -> String.format("double %f", d);
+            case String s -> String.format("String %s", s);
+            default -> obj.toString();
         };
     }
 

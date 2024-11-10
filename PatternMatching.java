@@ -2,7 +2,7 @@
 /*
  * Instanceof Pattern Matching JDK16
  * In JDK 23 java --enable-preview PatternMatching.java
- * Also see see Switch.java for switch pattern mapping!
+ * Also see Switch.java for switch pattern mapping!
  */
 import static java.io.IO.println;
 
